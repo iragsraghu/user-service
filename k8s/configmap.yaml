@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: user-service-config
+data:
+  db_host: "mysql-service"  # or 127.0.0.1 if local
+  db_port: "3306"
+  db_name: "users_db"
