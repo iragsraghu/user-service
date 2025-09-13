@@ -33,7 +33,7 @@ spec:
           mountPath: /var/lib/mysql
       volumes:
       - name: mysql-storage
-        emptyDir: {}   # or PersistentVolumeClaim for persistence
+        PersistentVolumeClaim: {}   # or PersistentVolumeClaim for persistence
 ---
 apiVersion: v1
 kind: Service

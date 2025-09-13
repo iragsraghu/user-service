@@ -27,6 +27,7 @@ func main() {
 	host := os.Getenv("DB_HOST")
 	port := os.Getenv("DB_PORT")
 	name := os.Getenv("DB_NAME")
+
 	dbConn, err := db.NewMySQL(user, pass, host, port, name)
 	fmt.Println(dbConn)
 	if err != nil {

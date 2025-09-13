@@ -9,4 +9,5 @@ spec:
     - protocol: TCP
       port: 8080
       targetPort: 8080
-  type: ClusterIP
+  type: NodePort // access via minikube service user-service or localhost:<nodePort>
+  # type: ClusterIP // ClusterIP accessible only inside cluster
