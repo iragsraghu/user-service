@@ -65,3 +65,7 @@ func (h *UserHandler) List(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, users)
 }
+
+func (h *UserHandler) Health(c *gin.Context) {
+	c.JSON(http.StatusOK, "Welcome")
+}

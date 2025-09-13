@@ -11,5 +11,6 @@ func Register(r *gin.Engine, h *handler.UserHandler) {
 		v1.POST("/users", h.Create)
 		v1.GET("/users/:id", h.GetByID)
 		v1.GET("/users", h.List)
+		v1.GET("/health", h.Health)
 	}
 }
